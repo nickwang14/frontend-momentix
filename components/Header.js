@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CgMenuGridO } from "react-icons/cg";
 import logo from "../assets/momentix-logo.png";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const styles = {
   container: `h-[60px] w-full flex items-center gap-5 px-16`,
@@ -23,7 +24,7 @@ const Header = () => {
         />
       </div>
       <div className={styles.menu}>
-        <div className={styles.menuItem}>Login</div>
+        <ConnectButton />
         <CgMenuGridO fontSize={30} className={styles.menuItem} />
       </div>
     </div>
